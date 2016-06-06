@@ -67,7 +67,7 @@ $.getJSON("/mun-pleb/Data/PCD.js", function (data) {
 });
 
 //Pictou Wards
-$.getJSON("/Data/PW.geojson", function (data) {
+$.getJSON("/mun-pleb/Data/PW.geojson", function (data) {
     var mapData = [];
     var mapCategories = [];
 
@@ -90,7 +90,7 @@ $.getJSON("/Data/PW.geojson", function (data) {
 });
 
 //New Glasgow Wards
-$.getJSON("mun-pleb/Data/NGW.jsonp", function (data) {
+$.getJSON("/mun-pleb/Data/NGW.jsonp", function (data) {
     var mapData = [];
     var mapCategories = [];
 
@@ -114,7 +114,7 @@ $.getJSON("mun-pleb/Data/NGW.jsonp", function (data) {
 
 
 //Stellarton Wards
-$.getJSON("mun-pleb/Data/SW.geojson", function (data) {
+$.getJSON("/mun-pleb/Data/SW.geojson", function (data) {
     var mapData = [];
     var mapCategories = [];
 
