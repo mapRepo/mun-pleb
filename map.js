@@ -90,7 +90,7 @@ $.getJSON("/Data/PW.geojson", function (data) {
 });
 
 //New Glasgow Wards
-$.getJSON("/Data/NGW.geojson", function (data) {
+$.getJSON("/Data/NGW.jsonp", function (data) {
     var mapData = [];
     var mapCategories = [];
 
