@@ -33,6 +33,33 @@ select,
 textarea {
     max-width: 280px;
 }
+.background1 
+{
+    background-color: #efeeef;
+}
+.background2
+{
+    background-color: #fff
+}
+.background3
+{
+    background-color: #ecf4f5
+}
+.background4
+{
+    background-color: #fec8c8
+}
+/*for centering images*/
+.center1{
+    display: block;
+    margin: 0 auto;
+}
+.padding1 {
+    padding: 10px 40px 20px 40px;
+}
+.padding2 {
+    padding: 0px 40px 20px 40px;
+}
 
 #map{
     height: 800px;
@@ -48,24 +75,80 @@ textarea {
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/">Amalgamation 2016</a>
+                <a class="navbar-brand" href="#">Amalgamation 2016</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <!--<li><a href="/">Home</a></li>-->
-                    
                 </ul>
             </div>
         </div>
     </div>
     <div class="container body-content">
+        <div class="form-group background4" style="text-align: center">
+                        <hr />
+                        <div class="form-group ">
+                            <label class="control-label" for="Pictou_County_Amalgamation_Plebiscite_-_Map_of_Results">Pictou County Amalgamation Plebiscite - Map of Results</label>
+                        </div>
+                        <hr />
+                    </div>
+                    <div class="form-group padding1">
+                        <p>
+                            As part of a public consultation process, on May 28th, 2016 Pictou Country held a plebiscite during which residents voted for or against the unification of four local municipal governments. The municipalities involved were:
+                        </p>
+                        <ul>
+                            <li>The Municipality of the County of Pictou</li>
+                            <li>Town of New Glasgow</li>
+                            <li>Town of Pictou</li>
+                            <li>Town of Stellarton</li>
+                        </ul>
+                        <p>
+                            Below is an interactive map presenting the results. 
+                        </p>
+                        <p>
+                            There are two map layers, one for the County/Town level and another for the District/Ward level. Use the drop down list to enable each layer.
+                        </p>
+                        <p>
+                            Click within each area to review the specific results.
+                        </p>
+                    </div>
 
-<div id="map" style="border: 10px solid black">  
+
+<div id="map" style="border: 6px solid grey">  
 </div>
+<div class="form-group padding1">
+    <p>
+        Although the results varied by location, the majority of the population voted against amalgamation. Out of a total of 16,683 people who voted:
+    </p>
+    <ul>
+        <li>11029 voted No (66.11%)</li>
+        <li>5630 voted Yes (33.75%)</li>
+        <li>24 rejected (0.14%)</li>
+    </ul>
+</div>
+
+<div class="form-group padding2">
+    <p>
+        By town:
+    </p>
+    <ul>
+        <li>The Municipality of the County of Pictou</li>
+            <ul>
+                <li>No: 7,794 (77%)</li>
+                <li>Yes: 2,309 (23%)</li>
+            </ul>
+        <li>Town of New Glasow</li>
+        <ul>
+            <li>No: 1,096 (34%)</li>
+            <li>Yes: 2,147 (66%)</li>
+        </ul>
+    </ul>
+</div>
+
 
         <hr />
         <footer>
-            <p>&copy; 2016 - Joe Fraser</p>
+            <p>&copy; 2016 - Joe Fraser & Chris Theriault</p>
         </footer>
     </div>
 
