@@ -43,7 +43,7 @@ function style(feature) {
 var allYes = 0;
 var allNo = 0;
 
-$.getJSON("/Data/PCD.js", function (data) {
+$.getJSON("/mun-pleb/Data/PCD.js", function (data) {
     var mapData = [];
     var mapCategories = [];
 
