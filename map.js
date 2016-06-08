@@ -79,8 +79,8 @@ $.getJSON("/mun-pleb/Data/PW.geojson", function (data) {
             var popupText = "<h5>District " + feat.District + ", " + feat.Poll + ", Pictou</h5><hr>"
             + "Yes: " + feat.YES + " votes</br>"
             + "No: " + feat.NO + " votes</br>"
-            + "Percentage Yes votes: " + ((feat.YES / (feat.YES + feat.NO)) * 100).toFixed(2) + "%</br>"
-            + "Percentage No votes: " + ((feat.NO / (feat.YES + feat.NO)) * 100).toFixed(2) + "%</br>";
+            + "Percentage Yes votes: " + (Number(feat.YES) / (Number(feat.YES) + Number(feat.NO)) * 100).toFixed(2) + "%</br>"
+            + "Percentage No votes: " + (Number(feat.NO) / (Number(feat.YES) + Number(feat.NO)) * 100).toFixed(2) + "%</br>";
 
             allYes += Number(feat.YES);
             allNo += Number(feat.NO);
