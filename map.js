@@ -53,7 +53,7 @@ var allYesSW = 0;
 var allNoSW = 0;
 
 function dw() {
-    $.getJSON("/Data/PCD.geojson", function (data) {
+    $.getJSON("/mun-pleb/Data/PCD.geojson", function (data) {
         var mapData = [];
         var mapCategories = [];
 
@@ -92,7 +92,7 @@ function dw() {
     });
 
     //Pictou Wards
-    $.getJSON("/Data/PW.geojson", function (data) {
+    $.getJSON("/mun-pleb/Data/PW.geojson", function (data) {
         var mapData = [];
         var mapCategories = [];
 
@@ -118,7 +118,7 @@ function dw() {
     });
 
     //New Glasgow Wards
-    $.getJSON("/Data/NGW.geojson", function (data) {
+    $.getJSON("/mun-pleb/Data/NGW.geojson", function (data) {
         var mapData = [];
         var mapCategories = [];
 
@@ -145,7 +145,7 @@ function dw() {
 
 
     //Stellarton Wards
-    $.getJSON("/Data/SW.geojson", function (data) {
+    $.getJSON("/mun-pleb/Data/SW.geojson", function (data) {
         var mapData = [];
         var mapCategories = [];
 
@@ -215,7 +215,7 @@ function dw() {
 //}
 
 function tc(){
-    $.getJSON("/Data/PCDMerged.geojson", function (data) {
+    $.getJSON("/mun-pleb/Data/PCDMerged.geojson", function (data) {
         var mapData = [];
         var mapCategories = [];
 
@@ -254,7 +254,7 @@ function tc(){
     });
 
     //Pictou Wards
-    $.getJSON("/Data/PWMerged.geojson", function (data) {
+    $.getJSON("/mun-pleb/Data/PWMerged.geojson", function (data) {
         var mapData = [];
         var mapCategories = [];
 
@@ -280,7 +280,7 @@ function tc(){
     });
 
     //New Glasgow Wards
-    $.getJSON("/Data/NGWMerged.geojson", function (data) {
+    $.getJSON("/mun-pleb/Data/NGWMerged.geojson", function (data) {
         var mapData = [];
         var mapCategories = [];
 
@@ -307,7 +307,7 @@ function tc(){
 
 
     //Stellarton Wards
-    $.getJSON("/Data/SWMerged.geojson", function (data) {
+    $.getJSON("/mun-pleb/Data/SWMerged.geojson", function (data) {
         var mapData = [];
         var mapCategories = [];
 
