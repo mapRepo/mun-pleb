@@ -26,7 +26,7 @@ function style(feature) {
             dashArray: '3',
             fillOpacity: 0.3,
             fillColor: '#567714',
-            className: "polys" 
+            className: "polys"
 
         };
     } else {
@@ -63,11 +63,12 @@ function dw() {
             onEachFeature: function (feature, layer) {
 
                 var feat = feature.properties;
-                var popupText = "<h5>District " + feat.DISTNAME + ", Pictou County</h5><hr>"
-                + "Yes: " + feat.YES + " votes</br>"
-                + "No:  " + feat.NO + " votes</br>"
-                + "Percentage Yes votes: " + (Number(feat.YES) / (Number(feat.YES) + Number(feat.NO)) * 100).toFixed(2) + "%</br>"
-                + "Percentage No votes: " + (Number(feat.NO) / (Number(feat.YES) + Number(feat.NO)) * 100).toFixed(2) + "%</br>";
+                var popupText = "<div id='container' style='min-width: 300px; height: 200px; margin: 0 auto'></div><h5 style='display: none;'>District " + feat.DISTNAME + ", Pictou County</h5>"
+                //var popupText = "<h5>District " + feat.DISTNAME + ", Pictou County</h5><hr>"
+                //+ "Yes: " + feat.YES + " votes</br>"
+                //+ "No:  " + feat.NO + " votes</br>"
+                //+ "Percentage Yes votes: " + (Number(feat.YES) / (Number(feat.YES) + Number(feat.NO)) * 100).toFixed(2) + "%</br>"
+                //+ "Percentage No votes: " + (Number(feat.NO) / (Number(feat.YES) + Number(feat.NO)) * 100).toFixed(2) + "%</br>";
 
                 allYesPCD += Number(feat.YES);
                 allNoPCD += Number(feat.NO);
@@ -101,11 +102,12 @@ function dw() {
             name: "Pictou Wards",
             onEachFeature: function (feature, layer) {
                 var feat = feature.properties;
-                var popupText = "<h5>District " + feat.District + ", " + feat.Poll + ", Pictou</h5><hr>"
-                + "Yes: " + feat.YES + " votes</br>"
-                + "No: " + feat.NO + " votes</br>"
-                + "Percentage Yes votes: " + (Number(feat.YES) / (Number(feat.YES) + Number(feat.NO)) * 100).toFixed(2) + "%</br>"
-                + "Percentage No votes: " + (Number(feat.NO) / (Number(feat.YES) + Number(feat.NO)) * 100).toFixed(2) + "%</br>";
+                var popupText = "<div id='container' style='min-width: 300px; height: 200px; margin: 0 auto'></div><h5 style='display: none;'>District " + feat.District + ", " + feat.Poll + ", Pictou</h5>"
+                //var popupText = "<h5>District " + feat.District + ", " + feat.Poll + ", Pictou</h5><hr>"
+                //+ "Yes: " + feat.YES + " votes</br>"
+                //+ "No: " + feat.NO + " votes</br>"
+                //+ "Percentage Yes votes: " + (Number(feat.YES) / (Number(feat.YES) + Number(feat.NO)) * 100).toFixed(2) + "%</br>"
+                //+ "Percentage No votes: " + (Number(feat.NO) / (Number(feat.YES) + Number(feat.NO)) * 100).toFixed(2) + "%</br>";
 
                 allYesPW += Number(feat.YES);
                 allNoPW += Number(feat.NO);
@@ -127,11 +129,12 @@ function dw() {
             name: "New Glasgow Wards",
             onEachFeature: function (feature, layer) {
                 var feat = feature.properties;
-                var popupText = "<h5>District " + feat.District + ", " + feat.Poll + ", New Glasgow</h5><hr>"
-                + "Yes: " + feat.YES + " votes</br>"
-                + "No: " + feat.NO + " votes</br>"
-                + "Percentage Yes votes: " + ((feat.YES / (feat.YES + feat.NO)) * 100).toFixed(2) + "%</br>"
-                + "Percentage No votes: " + ((feat.NO / (feat.YES + feat.NO)) * 100).toFixed(2) + "%</br>";
+                var popupText = "<div id='container' style='min-width: 300px; height: 200px; margin: 0 auto'></div><h5 style='display: none;'>District " + feat.District + ", " + feat.Poll + ", New Glasgow</h5>"
+                //var popupText = "<h5>District " + feat.District + ", " + feat.Poll + ", New Glasgow</h5><hr>"
+                //+ "Yes: " + feat.YES + " votes</br>"
+                //+ "No: " + feat.NO + " votes</br>"
+                //+ "Percentage Yes votes: " + ((feat.YES / (feat.YES + feat.NO)) * 100).toFixed(2) + "%</br>"
+                //+ "Percentage No votes: " + ((feat.NO / (feat.YES + feat.NO)) * 100).toFixed(2) + "%</br>";
 
                 allYesNGW += Number(feat.YES);
                 allNoNGW += Number(feat.NO);
@@ -154,11 +157,12 @@ function dw() {
             name: "Stellarton Wards",
             onEachFeature: function (feature, layer) {
                 var feat = feature.properties;
-                var popupText = "<h5>District " + feat.District + ", " + feat.Poll + ", Stellarton</h5><hr>"
-                + "Yes: " + feat.YES + " votes</br>"
-                + "No: " + feat.NO + " votes</br>"
-                + "Percentage Yes votes: " + ((feat.YES / (feat.YES + feat.NO)) * 100).toFixed(2) + "%</br>"
-                + "Percentage No votes: " + ((feat.NO / (feat.YES + feat.NO)) * 100).toFixed(2) + "%</br>";
+                var popupText = "<div id='container' style='min-width: 300px; height: 200px; margin: 0 auto'></div><h5 style='display: none;'>District " + feat.District + ", " + feat.Poll + ", Stellarton</h5>"
+                //var popupText = "<h5>District " + feat.District + ", " + feat.Poll + ", Stellarton</h5><hr>"
+                //+ "Yes: " + feat.YES + " votes</br>"
+                //+ "No: " + feat.NO + " votes</br>"
+                //+ "Percentage Yes votes: " + ((feat.YES / (feat.YES + feat.NO)) * 100).toFixed(2) + "%</br>"
+                //+ "Percentage No votes: " + ((feat.NO / (feat.YES + feat.NO)) * 100).toFixed(2) + "%</br>";
 
                 allYesSW += Number(feat.YES);
                 allNoSW += Number(feat.NO);
@@ -172,8 +176,8 @@ function dw() {
     });
 }
 
-    //console.log("Yes: " + allYes.toString());
-    //console.log("No: " + allNo);
+//console.log("Yes: " + allYes.toString());
+//console.log("No: " + allNo);
 //console.log(allYes + allNo);
 
 
@@ -214,7 +218,7 @@ function dw() {
 //        .attr("d", path.pointRadius(function (d) { return radius(d.properties.population); }));
 //}
 
-function tc(){
+function tc() {
     $.getJSON("/mun-pleb/Data/PCDMerged.geojson", function (data) {
         var mapData = [];
         var mapCategories = [];
@@ -225,11 +229,12 @@ function tc(){
             onEachFeature: function (feature, layer) {
 
                 var feat = feature.properties;
-                var popupText = "<h5>Pictou County</h5><hr>"
-                + "Yes: " + feat.YES + " votes</br>"
-                + "No:  " + feat.NO + " votes</br>"
-                + "Percentage Yes votes: " + (Number(feat.YES) / (Number(feat.YES) + Number(feat.NO)) * 100).toFixed(2) + "%</br>"
-                + "Percentage No votes: " + (Number(feat.NO) / (Number(feat.YES) + Number(feat.NO)) * 100).toFixed(2) + "%</br>";
+                var popupText = "<div id='container' style='min-width: 300px; height: 200px; margin: 0 auto'></div><h5 style='display: none;'>Pictou County</h5>"
+                //var popupText = "<h5>Pictou County</h5><hr>"
+                //+ "Yes: " + feat.YES + " votes</br>"
+                //+ "No:  " + feat.NO + " votes</br>"
+                //+ "Percentage Yes votes: " + (Number(feat.YES) / (Number(feat.YES) + Number(feat.NO)) * 100).toFixed(2) + "%</br>"
+                //+ "Percentage No votes: " + (Number(feat.NO) / (Number(feat.YES) + Number(feat.NO)) * 100).toFixed(2) + "%</br>";
 
                 allYesPCD += Number(feat.YES);
                 allNoPCD += Number(feat.NO);
@@ -263,11 +268,12 @@ function tc(){
             name: "Pictou Wards",
             onEachFeature: function (feature, layer) {
                 var feat = feature.properties;
-                var popupText = "<h5>Pictou</h5><hr>"
-                + "Yes: " + feat.YES + " votes</br>"
-                + "No: " + feat.NO + " votes</br>"
-                + "Percentage Yes votes: " + (Number(feat.YES) / (Number(feat.YES) + Number(feat.NO)) * 100).toFixed(2) + "%</br>"
-                + "Percentage No votes: " + (Number(feat.NO) / (Number(feat.YES) + Number(feat.NO)) * 100).toFixed(2) + "%</br>";
+                var popupText = "<div id='container' style='min-width: 300px; height: 200px; margin: 0 auto'></div><h5 style='display: none;'>Pictou</h5>"
+                //var popupText = "<h5>Pictou</h5><hr>"
+                //+ "Yes: " + feat.YES + " votes</br>"
+                //+ "No: " + feat.NO + " votes</br>"
+                //+ "Percentage Yes votes: " + (Number(feat.YES) / (Number(feat.YES) + Number(feat.NO)) * 100).toFixed(2) + "%</br>"
+                //+ "Percentage No votes: " + (Number(feat.NO) / (Number(feat.YES) + Number(feat.NO)) * 100).toFixed(2) + "%</br>";
 
                 allYesPW += Number(feat.YES);
                 allNoPW += Number(feat.NO);
@@ -289,11 +295,12 @@ function tc(){
             name: "New Glasgow Wards",
             onEachFeature: function (feature, layer) {
                 var feat = feature.properties;
-                var popupText = "<h5>New Glasgow</h5><hr>"
-                + "Yes: " + feat.YES + " votes</br>"
-                + "No: " + feat.NO + " votes</br>"
-                + "Percentage Yes votes: " + ((feat.YES / (feat.YES + feat.NO)) * 100).toFixed(2) + "%</br>"
-                + "Percentage No votes: " + ((feat.NO / (feat.YES + feat.NO)) * 100).toFixed(2) + "%</br>";
+                var popupText = "<div id='container' style='min-width: 300px; height: 200px; margin: 0 auto'></div><h5 style='display: none;'>New Glasgow</h5>"
+                //var popupText = "<h5>New Glasgow</h5><hr>"
+                //+ "Yes: " + feat.YES + " votes</br>"
+                //+ "No: " + feat.NO + " votes</br>"
+                //+ "Percentage Yes votes: " + ((feat.YES / (feat.YES + feat.NO)) * 100).toFixed(2) + "%</br>"
+                //+ "Percentage No votes: " + ((feat.NO / (feat.YES + feat.NO)) * 100).toFixed(2) + "%</br>";
 
                 allYesNGW += Number(feat.YES);
                 allNoNGW += Number(feat.NO);
@@ -316,11 +323,11 @@ function tc(){
             name: "Stellarton Wards",
             onEachFeature: function (feature, layer) {
                 var feat = feature.properties;
-                var popupText = "<h5>Stellarton</h5><hr>"
-                + "Yes: " + feat.YES + " votes</br>"
-                + "No: " + feat.NO + " votes</br>"
-                + "Percentage Yes votes: " + ((feat.YES / (feat.YES + feat.NO)) * 100).toFixed(2) + "%</br>"
-                + "Percentage No votes: " + ((feat.NO / (feat.YES + feat.NO)) * 100).toFixed(2) + "%</br>";
+                var popupText = "<div id='container' style='min-width: 300px; height: 200px; margin: 0 auto'></div><h5 style='display: none;'>Stellarton</h5>"
+                //+ "Yes: " + feat.YES + " votes</br>"
+                //+ "No: " + feat.NO + " votes</br>"
+                //+ "Percentage Yes votes: " + ((feat.YES / (feat.YES + feat.NO)) * 100).toFixed(2) + "%</br>"
+                //+ "Percentage No votes: " + ((feat.NO / (feat.YES + feat.NO)) * 100).toFixed(2) + "%</br>";
 
                 allYesSW += Number(feat.YES);
                 allNoSW += Number(feat.NO);
@@ -328,24 +335,24 @@ function tc(){
 
             }
         }).addTo(map);
-
+        //hc();
         console.log("SW: Yes- " + allYesSW)
         console.log("SW: No- " + allNoSW)
     });
 }
 
-    var legend = L.control({ position: 'topright' });
-    legend.onAdd = function (map) {
-        var div = L.DomUtil.create('div', 'info legend');
-        div.innerHTML =
-            '<select id="mapLayer">' +
-                '<option>District/Ward</option>' +
-                '<option>County/Town</option>' +
-            '</select>';
-        div.firstChild.onmousedown = div.firstChild.ondblclick = L.DomEvent.stopPropagation;
-        return div;
-    };
-    legend.addTo(map);
+var legend = L.control({ position: 'topright' });
+legend.onAdd = function (map) {
+    var div = L.DomUtil.create('div', 'info legend');
+    div.innerHTML =
+        '<select id="mapLayer">' +
+            '<option>District/Ward</option>' +
+            '<option>County/Town</option>' +
+        '</select>';
+    div.firstChild.onmousedown = div.firstChild.ondblclick = L.DomEvent.stopPropagation;
+    return div;
+};
+legend.addTo(map);
 
 $("#mapLayer").change(function () {
     var layerGroup = this.value;
@@ -370,3 +377,96 @@ dw();
 //$(".target").change(function () {
 //    alert("Handler for .change() called.");
 //});
+
+
+
+map.on('popupopen', function (e) {
+    //$.ajax({
+    //    type: "GET",
+    //    url: "data.json"
+    //})
+    //  .done(function (data) {
+    console.log(e.popup._source); // Layer instance
+    console.log(e.popup._source.feature); // Layer's feature 
+    console.log(e.popup._contentNode); // Popup content element
+    var polyonName = e.popup._contentNode.children[1].textContent;
+    console.log(polyonName);
+    var feat = e.popup._source.feature.properties;
+
+    var series = [{
+        name: 'Yes',
+        data: [feat.YES],
+        color: '#567714'
+    }, {
+        name: 'No',
+        data: [feat.NO],
+        color: '#801515'
+    }]
+
+
+    $('#container').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: polyonName + ' Voting Results'
+        },
+        //subtitle: {
+        //    text: 'Source: <a href="https://en.wikipedia.org/wiki/World_population">Wikipedia.org</a>'
+        //},
+        xAxis: {
+            //categories: ["Yes", "No"],
+            categories: [polyonName],
+            title: {
+                enabled: false
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Number of Votes',
+                align: 'middle'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: ' votes'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true,
+                    formatter: function () {
+                        var perc = this.series.name;
+                        if (perc == "Yes") {
+                            return "Yes: "+ ((feat.YES / (feat.YES + feat.NO)) * 100).toFixed(2) + "%";
+                        }
+                        else {
+                            return "No: " + ((feat.NO / (feat.YES + feat.NO)) * 100).toFixed(2) + "%";
+                        }
+                        
+                    }
+                }
+            }
+        },
+        legend: {
+            enabled: false,
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: -40,
+            y: 80,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: series
+    });
+      //});
+});
